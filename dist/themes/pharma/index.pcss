@@ -1,0 +1,885 @@
+:root {
+	--vkui--theme-name: 'pharma';
+	--vkui--font-family-accent: MailSans, Inter, Helvetica, Arial, sans-serif;
+	--vkui--font-family-base: Inter, Helvetica, Arial, sans-serif;
+	--vkui--font-weight-accent1: 400;
+	--vkui--font-weight-accent2: 500;
+	--vkui--font-weight-accent3: 600;
+	--vkui--font-weight-base1: 400;
+	--vkui--font-weight-base2: 700;
+	--vkui--font-weight-base3: 700;
+	--vkui--size-select-icon-padding--compact_x: 7px;
+	--vkui--size-select-icon-padding--compact: 7px;
+	--vkui--size-select-icon-padding--regular: 6px;
+	--vkui--size-popup-base-padding--compact_x: 20px;
+	--vkui--size-popup-base-padding--regular: 32px;
+	--vkui--size-popup-header-padding--compact_x: 16px;
+	--vkui--size-popup-header-padding--regular: 24px;
+	--vkui--size-border-radius--regular: 4px;
+	--vkui--size-check-border-radius--regular: 4px;
+	--vkui--size-border-radius-paper--regular: 4px;
+	--vkui--size-border-radius-promo--regular: 20px;
+	--vkui--size-field-height--regular: 48px;
+	--vkui--size-button-large-height--regular: 48px;
+	--vkui--size-button-medium-height--regular: 40px;
+	--vkui--size-button-small-height--regular: 36px;
+	--vkui--size-checkbox--regular: 16px;
+	--vkui--size-arrow--regular: 8px;
+	--vkui--size-arrow-promo--regular: 40px;
+	--vkui--size-popup-small--regular: 420px;
+	--vkui--size-popup-medium--regular: 680px;
+	--vkui--size-popup-large--regular: 880px;
+	--vkui--size-field-horizontal-padding--regular: 12px;
+	--vkui--size-button-padding-horizontal--regular: 20px;
+	--vkui--size-label-horizontal-margin--regular: 16px;
+	--vkui--size-arrow-padding--regular: 12px;
+	--vkui--size-tooltip-margin--regular: 8px;
+	--vkui--size-icon-u-i--compact_x: 16px;
+	--vkui--size-icon-u-i--compact: 16px;
+	--vkui--size-icon-u-i--regular: 18px;
+	--vkui--size-avatar-x-s--regular: 24px;
+	--vkui--size-avatar-s--regular: 32px;
+	--vkui--size-avatar-m--regular: 48px;
+	--vkui--size-avatar-l--regular: 96px;
+	--vkui--size-avatar-x-l--regular: 128px;
+	--vkui--size-badge-x-s--regular: 12px;
+	--vkui--size-badge-s--regular: 16px;
+	--vkui--size-badge-m--regular: 24px;
+	--vkui--size-badge-l--regular: 44px;
+	--vkui--size-badge-x-l--regular: 56px;
+	--vkui--size-cardgrid-padding--regular: 12px;
+	--vkui--size-card-border-radius--regular: 16px;
+	--vkui--size-cardgrid-padding-vertical--regular: 8px;
+	--vkui--size-base-padding-horizontal--regular: 16px;
+	--vkui--size-button-group-gap-space--regular: 1px;
+	--vkui--size-button-group-gap-small--regular: 8px;
+	--vkui--size-button-group-gap-medium--regular: 12px;
+	--vkui--elevation1: 0 2px 0 0 rgba(0, 16, 61, 0.04);
+	--vkui--elevation2: 0 4px 32px 0 rgba(0, 16, 61, 0.32);
+	--vkui--elevation3: 0 4px 20px 0 rgba(0,0,0,.16);
+	--vkui--elevation4: 0 16px 48px 0 rgba(0, 0, 0, 0.48);
+	--vkui--animation-duration-l: 0.4s;
+	--vkui--animation-duration-m: 0.2s;
+	--vkui--animation-duration-s: 0.1s;
+	--vkui--animation-easing-default: cubic-bezier(0.3, 0.3, 0.5, 1);
+	--vkui--opacity-disable: 0.48;
+	--vkui--opacity-disable-accessibility: 0.64;
+	--vkui--x0: 0px;
+	--vkui--x025: 1px;
+	--vkui--x05: 2px;
+	--vkui--x1: 4px;
+	--vkui--x2: 8px;
+	--vkui--x3: 12px;
+	--vkui--x4: 16px;
+	--vkui--x5: 20px;
+	--vkui--x6: 24px;
+	--vkui--x8: 32px;
+	--vkui--x10: 40px;
+	--vkui--x12: 48px;
+	--vkui--x15: 60px;
+	--vkui--x20: 80px;
+	--vkui--size-base: 4px;
+	--vkui--size-grid: 20px;
+	--vkui--size-arrow-height--regular: 8px;
+	--vkui--size-arrow-width--regular: 12px;
+	--vkui--size-base-padding--compact_x: 16px;
+	--vkui--size-base-padding--regular: 20px;
+	--vkui--size-border-width-tab--regular: 2px;
+	--vkui--size-border-width-bar--regular: 4px;
+	--vkui--size-border-width-accent--regular: 8px;
+	--vkui--size-border-width-accent-secondary--regular: 4px;
+	--vkui--size-control-button-width-min--compact_x: 130px;
+	--vkui--size-control-button-width-min--compact: 130px;
+	--vkui--size-control-button-width-min--regular: 94px;
+	--vkui--size-promo-button-close--regular: 32px;
+	--vkui--size-button-slider-height--regular: 24px;
+	--vkui--size-button-slider-width--regular: 12px;
+	--vkui--size-button-slider-width-pointer--regular: 16px;
+	--vkui--size-field-width-min--compact_x: 288px;
+	--vkui--size-field-width-min--regular: 380px;
+	--vkui--size-label-width--regular: 184px;
+	--vkui--size-progress--regular: 4px;
+	--vkui--size-progress-scroll--regular: 12px;
+	--vkui--size-dot-bullet--regular: 4px;
+	--vkui--size-dot-indicate--regular: 8px;
+	--vkui--size-dot-clickable--regular: 12px;
+	--vkui--size-vertical-padding--regular: 0px;
+	--vkui--size-button-more-padding--regular: 8px;
+	--vkui--size-icon-more-padding--regular: 12px;
+	--vkui--size-button-icon-padding--regular: 20px;
+	--vkui--size-div-padding--regular: 4px;
+	--vkui--size-menu-padding--regular: 8px;
+	--vkui--size-tag-padding--regular: 8px;
+	--vkui--size-tab-padding--compact_x: 0px;
+	--vkui--size-tab-padding--compact: 0px;
+	--vkui--size-tab-padding--regular: 16px;
+	--vkui--size-table-horizontal-padding--regular: 16px;
+	--vkui--size-table-vertical-padding--regular: 16px;
+	--vkui--size-slice-top-padding--regular: 40px;
+	--vkui--size-slice-bottom-padding--regular: 60px;
+	--vkui--size-base-margin--regular: 12px;
+	--vkui--size-label-vertical-margin--regular: 4px;
+	--vkui--size-tip-margin--regular: 4px;
+	--vkui--size-field-horizontal-margin--compact_x: 16px;
+	--vkui--size-field-horizontal-margin--compact: 16px;
+	--vkui--size-field-horizontal-margin--regular: 20px;
+	--vkui--size-field-vertical-margin--regular: 24px;
+	--vkui--size-field-set-margin--regular: 32px;
+	--vkui--size-icon-margin--regular: 8px;
+	--vkui--size-choice-margin--regular: 8px;
+	--vkui--size-menu-margin--regular: 2px;
+	--vkui--size-tag-margin--regular: 8px;
+	--vkui--size-tab-margin--compact_x: 32px;
+	--vkui--size-tab-margin--compact: 32px;
+	--vkui--size-tab-margin--regular: 8px;
+	--vkui--size-bullet-margin--regular: 12px;
+	--vkui--size-attribute-margin--regular: 4px;
+	--vkui--size-popup-margin--compact_x: 8px;
+	--vkui--size-popup-margin--compact: 8px;
+	--vkui--size-popup-margin--regular: 24px;
+	--vkui--size-header-icon--regular: 20px;
+	--vkui--size-wysiwyg-icon--regular: 14px;
+	--vkui--size-illustration-s--regular: 48px;
+	--vkui--size-illustration-x-m--regular: 72px;
+	--vkui--size-illustration-m--regular: 96px;
+	--vkui--size-illustration-l--regular: 144px;
+	--vkui--size-illustration-x-x-l--regular: 228px;
+	--vkui--tone-value-overlay: 0.48;
+	--vkui--tone-value-viewer: 0.88;
+	--vkui--tone-value-toolbar: 0.24;
+	--vkui--tone-value-hover: 0.04;
+	--vkui--tone-value-active: 0.08;
+	--vkui--tone-value-focus: 0.08;
+	--vkui--type-border-button: solid;
+	--vkui--type-border-position: inset;
+	--vkui--theme-name-base: 'pharma';
+	--vkui--font-family-article: Georgia, serif;
+	--vkui--font-weight-article1: 400;
+	--vkui--font-weight-article2: 700;
+	--vkui--grid-content--compact_x: 100%;
+	--vkui--grid-content--compact: 580px;
+	--vkui--grid-content--regular: 880px;
+	--vkui--grid-content--large: 1180px;
+	--vkui--grid-column-x2--compact_x: 100%;
+	--vkui--grid-column-x2--compact: 280px;
+	--vkui--grid-column-x2--regular: 430px;
+	--vkui--grid-column-x2--large: 580px;
+	--vkui--grid-column-x3--compact_x: 100%;
+	--vkui--grid-column-x3--compact: 180px;
+	--vkui--grid-column-x3--regular: 280px;
+	--vkui--grid-column-x3--large: 380px;
+	--vkui--grid-column-x4--compact_x: 100%;
+	--vkui--grid-column-x4--compact: 130px;
+	--vkui--grid-column-x4--regular: 205px;
+	--vkui--grid-column-x4--large: 280px;
+	--vkui--grid-column-x6--compact_x: 100%;
+	--vkui--grid-column-x6--compact: 80px;
+	--vkui--grid-column-x6--regular: 130px;
+	--vkui--grid-column-x6--large: 180px;
+	--vkui--grid-layout-article--compact_x: 100%;
+	--vkui--grid-layout-article--compact: 100%;
+	--vkui--grid-layout-article--regular: 540px;
+	--vkui--grid-layout-article--large: 540px;
+	--vkui--grid-layout-banner--compact_x: 100%;
+	--vkui--grid-layout-banner--compact: 280px;
+	--vkui--grid-layout-banner--regular: 280px;
+	--vkui--grid-layout-banner--large: 560px;
+	--vkui--colors-scheme: light;
+	--vkui--color-background-accent: #1DD3A2;
+	--vkui--color-background-accent--hover: #1CCB9E;
+	--vkui--color-background-accent--active: #1BC39A;
+	--vkui--color-background-accent-themed: #005FF9;
+	--vkui--color-background-accent-themed--hover: #005CF1;
+	--vkui--color-background-accent-themed--active: #0059EA;
+	--vkui--color-background-accent-alternative: #FF9E00;
+	--vkui--color-background-accent-alternative--hover: #F59802;
+	--vkui--color-background-accent-alternative--active: #EB9305;
+	--vkui--color-background-content: #FFFFFF;
+	--vkui--color-background-content--hover: #F5F5F7;
+	--vkui--color-background-content--active: #EBECEF;
+	--vkui--color-background-secondary: #F0F1F3;
+	--vkui--color-background-secondary--hover: #E6E8EC;
+	--vkui--color-background-secondary--active: #DDDFE4;
+	--vkui--color-background-secondary-alpha: rgba(0, 16, 61, 0.06);
+	--vkui--color-background-secondary-alpha--hover: rgba(0, 16, 61, 0.1);
+	--vkui--color-background-secondary-alpha--active: rgba(0, 16, 61, 0.14);
+	--vkui--color-background: #FFFFFF;
+	--vkui--color-background--hover: #F5F5F7;
+	--vkui--color-background--active: #EBECEF;
+	--vkui--color-background-contrast: #FFFFFF;
+	--vkui--color-background-contrast--hover: #F5F5F7;
+	--vkui--color-background-contrast--active: #EBECEF;
+	--vkui--color-background-contrast-secondary-alpha: rgba(255, 255, 255, 0.20);
+	--vkui--color-background-contrast-secondary-alpha--hover: rgba(255, 255, 255, 0.24);
+	--vkui--color-background-contrast-secondary-alpha--active: rgba(255, 255, 255, 0.28);
+	--vkui--color-background-warning: #FFF1AD;
+	--vkui--color-background-warning--hover: #F5E8A9;
+	--vkui--color-background-warning--active: #EBDFA4;
+	--vkui--color-background-negative: #ED0A34;
+	--vkui--color-background-negative--hover: #E40A34;
+	--vkui--color-background-negative--active: #DA0A35;
+	--vkui--color-background-tertiary: #F9F9FA;
+	--vkui--color-background-tertiary--hover: #EFF0F2;
+	--vkui--color-background-tertiary--active: #E5E6EB;
+	--vkui--color-background-modal: #FFFFFF;
+	--vkui--color-background-modal--hover: #F5F5F7;
+	--vkui--color-background-modal--active: #EBECEF;
+	--vkui--color-background-positive: #0DC268;
+	--vkui--color-background-positive--hover: #0CBB66;
+	--vkui--color-background-positive--active: #0CB465;
+	--vkui--color-background-negative-tint: #FAEBEB;
+	--vkui--color-background-negative-tint--hover: #F0E2E4;
+	--vkui--color-background-negative-tint--active: #E6D9DD;
+	--vkui--color-text-accent: #1DD3A2;
+	--vkui--color-text-accent--hover: #1CCB9E;
+	--vkui--color-text-accent--active: #1BC39A;
+	--vkui--color-text-accent-themed: #005FF9;
+	--vkui--color-text-accent-themed--hover: #005CF1;
+	--vkui--color-text-accent-themed--active: #0059EA;
+	--vkui--color-text-negative: #ED0A34;
+	--vkui--color-text-negative--hover: #E40A34;
+	--vkui--color-text-negative--active: #DA0A35;
+	--vkui--color-text-link: #005BD1;
+	--vkui--color-text-link--hover: #0058CB;
+	--vkui--color-text-link--active: #0055C5;
+	--vkui--color-text-link-themed: #005BD1;
+	--vkui--color-text-link-themed--hover: #0058CB;
+	--vkui--color-text-link-themed--active: #0055C5;
+	--vkui--color-text-muted: #2C2D2E;
+	--vkui--color-text-muted--hover: #2A2C2F;
+	--vkui--color-text-muted--active: #282B2F;
+	--vkui--color-text-primary: #2C2D2E;
+	--vkui--color-text-primary--hover: #2A2C2F;
+	--vkui--color-text-primary--active: #282B2F;
+	--vkui--color-text-primary-invariably: #2C2D2E;
+	--vkui--color-text-primary-invariably--hover: #2A2C2F;
+	--vkui--color-text-primary-invariably--active: #282B2F;
+	--vkui--color-text-secondary: #87898F;
+	--vkui--color-text-secondary--hover: #82848C;
+	--vkui--color-text-secondary--active: #7C7F88;
+	--vkui--color-text-subhead: #797A80;
+	--vkui--color-text-subhead--hover: #74767D;
+	--vkui--color-text-subhead--active: #6F727B;
+	--vkui--color-text-tertiary: #AAADB3;
+	--vkui--color-text-tertiary--hover: #A3A7AE;
+	--vkui--color-text-tertiary--active: #9CA0AA;
+	--vkui--color-text-link-visited: #528FDF;
+	--vkui--color-text-link-visited--hover: #4F8AD9;
+	--vkui--color-text-link-visited--active: #4B85D2;
+	--vkui--color-text-contrast: #FFFFFF;
+	--vkui--color-text-contrast--hover: #F5F5F7;
+	--vkui--color-text-contrast--active: #EBECEF;
+	--vkui--color-text-contrast-themed: #FFFFFF;
+	--vkui--color-text-contrast-themed--hover: #F5F5F7;
+	--vkui--color-text-contrast-themed--active: #EBECEF;
+	--vkui--color-link-contrast: #FFFFFF;
+	--vkui--color-link-contrast--hover: #F5F5F7;
+	--vkui--color-link-contrast--active: #EBECEF;
+	--vkui--color-text-positive: #0DC268;
+	--vkui--color-text-positive--hover: #0CBB66;
+	--vkui--color-text-positive--active: #0CB465;
+	--vkui--color-icon-accent: #1DD3A2;
+	--vkui--color-icon-accent--hover: #1CCB9E;
+	--vkui--color-icon-accent--active: #1BC39A;
+	--vkui--color-icon-negative: #ED0A34;
+	--vkui--color-icon-negative--hover: #E40A34;
+	--vkui--color-icon-negative--active: #DA0A35;
+	--vkui--color-icon-primary: #2C2D2E;
+	--vkui--color-icon-primary--hover: #2A2C2F;
+	--vkui--color-icon-primary--active: #282B2F;
+	--vkui--color-icon-primary-invariably: #2C2D2E;
+	--vkui--color-icon-primary-invariably--hover: #2A2C2F;
+	--vkui--color-icon-primary-invariably--active: #282B2F;
+	--vkui--color-icon-medium: #919399;
+	--vkui--color-icon-medium--hover: #8B8E95;
+	--vkui--color-icon-medium--active: #858992;
+	--vkui--color-icon-medium-alpha: rgba(39, 43, 55, 0.5);
+	--vkui--color-icon-medium-alpha--hover: rgba(39, 43, 55, 0.54);
+	--vkui--color-icon-medium-alpha--active: rgba(39, 43, 55, 0.58);
+	--vkui--color-icon-secondary: #A5A7AD;
+	--vkui--color-icon-secondary--hover: #9EA1A9;
+	--vkui--color-icon-secondary--active: #989BA4;
+	--vkui--color-icon-secondary-alpha: rgba(39, 43, 55, 0.3);
+	--vkui--color-icon-secondary-alpha--hover: rgba(39, 43, 55, 0.34);
+	--vkui--color-icon-secondary-alpha--active: rgba(39, 43, 55, 0.38);
+	--vkui--color-icon-tertiary: #CFD1D6;
+	--vkui--color-icon-tertiary--hover: #C7C9D0;
+	--vkui--color-icon-tertiary--active: #BEC2CA;
+	--vkui--color-icon-tertiary-alpha: rgba(39, 43, 55, 0.2);
+	--vkui--color-icon-tertiary-alpha--hover: rgba(39, 43, 55, 0.24);
+	--vkui--color-icon-tertiary-alpha--active: rgba(39, 43, 55, 0.28);
+	--vkui--color-icon-contrast: #FFFFFF;
+	--vkui--color-icon-contrast--hover: #F5F5F7;
+	--vkui--color-icon-contrast--active: #EBECEF;
+	--vkui--color-icon-contrast-themed: #FFFFFF;
+	--vkui--color-icon-contrast-themed--hover: #F5F5F7;
+	--vkui--color-icon-contrast-themed--active: #EBECEF;
+	--vkui--color-icon-positive: #0DC268;
+	--vkui--color-icon-positive--hover: #0CBB66;
+	--vkui--color-icon-positive--active: #0CB465;
+	--vkui--color-stroke-accent: #1DD3A2;
+	--vkui--color-stroke-accent--hover: #1CCB9E;
+	--vkui--color-stroke-accent--active: #1BC39A;
+	--vkui--color-stroke-accent-themed: #005FF9;
+	--vkui--color-stroke-accent-themed--hover: #005CF1;
+	--vkui--color-stroke-accent-themed--active: #0059EA;
+	--vkui--color-stroke-contrast: #FFFFFF;
+	--vkui--color-stroke-contrast--hover: #F5F5F7;
+	--vkui--color-stroke-contrast--active: #EBECEF;
+	--vkui--color-stroke-negative: #ED0A34;
+	--vkui--color-stroke-negative--hover: #E40A34;
+	--vkui--color-stroke-negative--active: #DA0A35;
+	--vkui--color-image-border-alpha: rgba(0, 16, 61, 0.08);
+	--vkui--color-image-border-alpha--hover: rgba(0, 16, 61, 0.12);
+	--vkui--color-image-border-alpha--active: rgba(0, 16, 61, 0.16);
+	--vkui--color-field-border-alpha: rgba(0, 16, 61, 0.12);
+	--vkui--color-field-border-alpha--hover: rgba(0, 16, 61, 0.16);
+	--vkui--color-field-border-alpha--active: rgba(0, 16, 61, 0.2);
+	--vkui--color-separator-primary-alpha: rgba(0, 16, 61, 0.12);
+	--vkui--color-separator-primary-alpha--hover: rgba(0, 16, 61, 0.16);
+	--vkui--color-separator-primary-alpha--active: rgba(0, 16, 61, 0.2);
+	--vkui--color-separator-secondary: #E6E7EB;
+	--vkui--color-separator-secondary--hover: #DDDEE4;
+	--vkui--color-separator-secondary--active: #D4D6DD;
+	--vkui--color-separator-primary: #DADCE0;
+	--vkui--color-separator-primary--hover: #D1D4D9;
+	--vkui--color-separator-primary--active: #C9CCD3;
+	--vkui--color-stroke-positive: #0DC268;
+	--vkui--color-stroke-positive--hover: #0CBB66;
+	--vkui--color-stroke-positive--active: #0CB465;
+	--vkui--color-accent-blue: #005FF9;
+	--vkui--color-accent-blue--hover: #005CF1;
+	--vkui--color-accent-blue--active: #0059EA;
+	--vkui--color-accent-gray: #A5A7AD;
+	--vkui--color-accent-gray--hover: #9EA1A9;
+	--vkui--color-accent-gray--active: #989BA4;
+	--vkui--color-accent-red: #ED0A34;
+	--vkui--color-accent-red--hover: #E40A34;
+	--vkui--color-accent-red--active: #DA0A35;
+	--vkui--color-accent-green: #0DC268;
+	--vkui--color-accent-green--hover: #0CBB66;
+	--vkui--color-accent-green--active: #0CB465;
+	--vkui--color-accent-orange: #FF9E00;
+	--vkui--color-accent-orange--hover: #F59802;
+	--vkui--color-accent-orange--active: #EB9305;
+	--vkui--color-accent-purple: #4F6DDC;
+	--vkui--color-accent-purple--hover: #4C69D6;
+	--vkui--color-accent-purple--active: #4966CF;
+	--vkui--color-accent-violet: #C15DF3;
+	--vkui--color-accent-violet--hover: #B95AEC;
+	--vkui--color-accent-violet--active: #B257E4;
+	--vkui--color-accent-secondary: #FF9E00;
+	--vkui--color-accent-secondary--hover: #F59802;
+	--vkui--color-accent-secondary--active: #EB9305;
+	--vkui--color-action-sheet-text: #005FF9;
+	--vkui--color-action-sheet-text--hover: #005CF1;
+	--vkui--color-action-sheet-text--active: #0059EA;
+	--vkui--color-header-background: #FFFFFF;
+	--vkui--color-header-background--hover: #F5F5F7;
+	--vkui--color-header-background--active: #EBECEF;
+	--vkui--color-panel-header-icon: #005FF9;
+	--vkui--color-panel-header-icon--hover: #005CF1;
+	--vkui--color-panel-header-icon--active: #0059EA;
+	--vkui--color-write-bar-input-background: #F0F1F3;
+	--vkui--color-write-bar-input-background--hover: #E6E8EC;
+	--vkui--color-write-bar-input-background--active: #DDDFE4;
+	--vkui--color-write-bar-input-border-alpha: rgba(0, 16, 61, 0.8);
+	--vkui--color-write-bar-input-border-alpha--hover: rgba(0, 16, 61, 0.84);
+	--vkui--color-write-bar-input-border-alpha--active: rgba(0, 16, 61, 0.88);
+	--vkui--color-track-background: #DADCE0;
+	--vkui--color-track-background--hover: #D1D4D9;
+	--vkui--color-track-background--active: #C9CCD3;
+	--vkui--color-track-buffer: #83AAEA;
+	--vkui--color-track-buffer--hover: #7EA4E3;
+	--vkui--color-track-buffer--active: #799EDC;
+	--vkui--color-image-placeholder: #E6E7EB;
+	--vkui--color-image-placeholder--hover: #DDDEE4;
+	--vkui--color-image-placeholder--active: #D4D6DD;
+	--vkui--color-image-placeholder-alpha: rgba(0, 16, 61, 0.8);
+	--vkui--color-image-placeholder-alpha--hover: rgba(0, 16, 61, 0.84);
+	--vkui--color-image-placeholder-alpha--active: rgba(0, 16, 61, 0.88);
+	--vkui--color-search-field-background: #E6E7EB;
+	--vkui--color-search-field-background--hover: #DDDEE4;
+	--vkui--color-search-field-background--active: #D4D6DD;
+	--vkui--color-write-bar-icon: #005FF9;
+	--vkui--color-write-bar-icon--hover: #005CF1;
+	--vkui--color-write-bar-icon--active: #0059EA;
+	--vkui--color-skeleton-from: #F3F3F5;
+	--vkui--color-skeleton-from--hover: #E9EAEE;
+	--vkui--color-skeleton-from--active: #E0E1E6;
+	--vkui--color-skeleton-to: #E0E1E6;
+	--vkui--color-skeleton-to--hover: #D7D9DF;
+	--vkui--color-skeleton-to--active: #CED0D8;
+	--vkui--color-avatar-overlay: rgba(145, 147, 153, 0.48);
+	--vkui--color-avatar-overlay--hover: rgba(145, 147, 153, 0.52);
+	--vkui--color-avatar-overlay--active: rgba(145, 147, 153, 0.56);
+	--vkui--color-overlay-primary: rgba(0, 0, 0, 0.48);
+	--vkui--color-overlay-primary--hover: rgba(0, 0, 0, 0.52);
+	--vkui--color-overlay-primary--active: rgba(0, 0, 0, 0.56);
+	--vkui--color-transparent: transparent;
+	--vkui--color-transparent--hover: rgba(0, 16, 61, 0.04);
+	--vkui--color-transparent--active: rgba(0, 16, 61, 0.08);
+	--vkui--color-rating: #ffd400;
+	--vkui--color-rating--hover: #F5CC02;
+	--vkui--color-rating--active: #EBC405;
+	--vkui--color-button-contrast-alpha: rgba(255, 255, 255, 1);
+	--vkui--color-button-contrast-alpha--hover: rgba(255, 255, 255, 0.8);
+	--vkui--color-button-contrast-alpha--active: rgba(255, 255, 255, 0.6);
+	--vkui--color-button-contrast: #FFFFFF;
+	--vkui--color-button-contrast--hover: #FFFFFF;
+	--vkui--color-button-contrast--active: #FFFFFF;
+	--vkui--color-thumb-error-background-alpha: rgba(237, 10, 52, 0.12);
+	--vkui--color-thumb-error-background-alpha--hover: rgba(237, 10, 52, 0.16);
+	--vkui--color-thumb-error-background-alpha--active: rgba(237, 10, 52, 0.2);
+	--vkui--color-primary-auto: #ff4f00;
+	--vkui--color-primary-auto--hover: #F54C02;
+	--vkui--color-primary-auto--active: #EB4A05;
+	--vkui--color-primary-base: #005ff9;
+	--vkui--color-primary-base--hover: #005CF1;
+	--vkui--color-primary-base--active: #0059EA;
+	--vkui--color-primary-deti: #ca9cf4;
+	--vkui--color-primary-deti--hover: #C296ED;
+	--vkui--color-primary-deti--active: #BA91E5;
+	--vkui--color-primary-dobro: #ffd400;
+	--vkui--color-primary-dobro--hover: #F5CC02;
+	--vkui--color-primary-dobro--active: #EBC405;
+	--vkui--color-primary-health: #008079;
+	--vkui--color-primary-health--hover: #007C77;
+	--vkui--color-primary-health--active: #007774;
+	--vkui--color-primary-health-new: #3cd298;
+	--vkui--color-primary-health-new--hover: #3ACA94;
+	--vkui--color-primary-health-new--active: #37C291;
+	--vkui--color-primary-hitech: #5856d6;
+	--vkui--color-primary-hitech--hover: #5453D0;
+	--vkui--color-primary-hitech--active: #5150CA;
+	--vkui--color-primary-kino: #eaff00;
+	--vkui--color-primary-kino--hover: #E1F502;
+	--vkui--color-primary-kino--active: #D7EC05;
+	--vkui--color-primary-lady: #ff2d54;
+	--vkui--color-primary-lady--hover: #F52C53;
+	--vkui--color-primary-lady--active: #EB2B52;
+	--vkui--color-primary-mycom: #00abf2;
+	--vkui--color-primary-mycom--hover: #00A5EB;
+	--vkui--color-primary-mycom--active: #009FE4;
+	--vkui--color-primary-realty: #4c8ebc;
+	--vkui--color-primary-realty--hover: #4989B7;
+	--vkui--color-primary-realty--active: #4684B2;
+	--vkui--color-primary-pharma: #1DD3A2;
+	--vkui--color-primary-pharma--hover: #1CCB9E;
+	--vkui--color-primary-pharma--active: #1BC39A;
+	--vkui--color-primary-pets: #fd696e;
+	--vkui--color-primary-pets--hover: #F3656C;
+	--vkui--color-primary-pets--active: #E9626A;
+	--vkui--color-secondary-base: #ff9e00;
+	--vkui--color-secondary-base--hover: #F59802;
+	--vkui--color-secondary-base--active: #EB9305;
+	--vkui--color-secondary-health: #fde953;
+	--vkui--color-secondary-health--hover: #F3E052;
+	--vkui--color-secondary-health--active: #E9D851;
+	--vkui--color-secondary-mycom: #fc2c38;
+	--vkui--color-secondary-mycom--hover: #F22B38;
+	--vkui--color-secondary-mycom--active: #E82A38;
+	--vkui--color-social-vk: #3F8AE0;
+	--vkui--color-social-vk--hover: #3C85D9;
+	--vkui--color-social-vk--active: #3A80D3;
+	--vkui--color-social-ok: #ee8208;
+	--vkui--color-social-ok--hover: #E47D0A;
+	--vkui--color-social-ok--active: #DB790C;
+	--vkui--color-social-fb: #1877f2;
+	--vkui--color-social-fb--hover: #1773EB;
+	--vkui--color-social-fb--active: #166FE4;
+	--vkui--color-social-mir: #117eda;
+	--vkui--color-social-mir--hover: #107AD4;
+	--vkui--color-social-mir--active: #1075CD;
+	--vkui--color-social-twitter: #1da1f2;
+	--vkui--color-social-twitter--hover: #1C9BEB;
+	--vkui--color-social-twitter--active: #1B95E4;
+	--vkui--color-social-behance: #1769ff;
+	--vkui--color-social-behance--hover: #1665F7;
+	--vkui--color-social-behance--active: #1562EF;
+	--vkui--color-social-dribbble: #ea4c89;
+	--vkui--color-social-dribbble--hover: #E14A86;
+	--vkui--color-social-dribbble--active: #D74783;
+	--vkui--color-sale: #eb1981;
+	--vkui--color-sale--hover: #E2197E;
+	--vkui--color-sale--active: #D8187C;
+}
+
+%vkui--font-title1--regular {
+	font-size: 24px;
+	line-height: 28px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-title1--compact {
+	font-size: 24px;
+	line-height: 28px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-title2--regular {
+	font-size: 20px;
+	line-height: 26px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-title2--compact {
+	font-size: 20px;
+	line-height: 26px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-title3--regular {
+	font-size: 17px;
+	line-height: 22px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-title3--compact {
+	font-size: 17px;
+	line-height: 22px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-headline1--regular {
+	font-size: 15px;
+	line-height: 20px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-headline1--compact {
+	font-size: 16px;
+	line-height: 20px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-headline2--regular {
+	font-size: 14px;
+	line-height: 20px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-headline2--compact {
+	font-size: 15px;
+	line-height: 20px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-text--regular {
+	font-size: 15px;
+	line-height: 20px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-text--compact {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-paragraph--regular {
+	font-size: 15px;
+	line-height: 20px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-subhead--regular {
+	font-size: 13px;
+	line-height: 18px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-subhead--compact {
+	font-size: 14px;
+	line-height: 18px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-footnote--regular {
+	font-size: 13px;
+	line-height: 18px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-footnote--compact {
+	font-size: 13px;
+	line-height: 18px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-footnote-caps--regular {
+	font-size: 13px;
+	line-height: 18px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}
+%vkui--font-footnote-caps--compact {
+	font-size: 13px;
+	line-height: 18px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}
+%vkui--font-caption1--regular {
+	font-size: 12px;
+	line-height: 16px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-caption1--compact {
+	font-size: 12px;
+	line-height: 16px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-caption1-caps--regular {
+	font-size: 12px;
+	line-height: 16px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.26px;
+}
+%vkui--font-caption1-caps--compact {
+	font-size: 12px;
+	line-height: 16px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.26px;
+}
+%vkui--font-caption2--regular {
+	font-size: 11px;
+	line-height: 14px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-caption2--compact {
+	font-size: 11px;
+	line-height: 14px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-caption2-caps--regular {
+	font-size: 11px;
+	line-height: 14px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.22px;
+}
+%vkui--font-caption2-caps--compact {
+	font-size: 11px;
+	line-height: 14px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.22px;
+}
+%vkui--font-caption3--regular {
+	font-size: 9px;
+	line-height: 12px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-caption3--compact {
+	font-size: 9px;
+	line-height: 12px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-caption3-caps--regular {
+	font-size: 9px;
+	line-height: 12px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.16px;
+}
+%vkui--font-caption3-caps--compact {
+	font-size: 9px;
+	line-height: 12px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.16px;
+}
+%vkui--font-h0--regular {
+	font-size: 28px;
+	line-height: 32px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+}
+%vkui--font-h0--compact {
+	font-size: 44px;
+	line-height: 52px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+}
+%vkui--font-h1--regular {
+	font-size: 36px;
+	line-height: 48px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-h1--compact {
+	font-size: 28px;
+	line-height: 36px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-h2--regular {
+	font-size: 28px;
+	line-height: 34px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-h2--compact {
+	font-size: 24px;
+	line-height: 32px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--media-font-media-header--regular {
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: -0.5%;
+}
+%vkui--media-font-media-header--compact {
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 48px;
+	letter-spacing: -0.5%;
+}
+%vkui--media-font-media-title1--regular {
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 36px;
+}
+%vkui--media-font-media-title1--compact {
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 36px;
+}
+%vkui--media-font-media-title2--regular {
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+}
+%vkui--media-font-media-title2--compact {
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 32px;
+}
+%vkui--media-font-media-title3--regular {
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+}
+%vkui--media-font-media-title3--compact {
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+}
+%vkui--media-font-media-lead--regular {
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 28px;
+}
+%vkui--media-font-media-lead--compact {
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 32px;
+	letter-spacing: -0.3%;
+}
+%vkui--media-font-media-paragraph--regular {
+	font-family: Georgia, serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+}
+%vkui--media-font-media-paragraph--compact {
+	font-family: Georgia, serif;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 32px;
+}
+%vkui--font-h3--regular {
+	font-size: 20px;
+	line-height: 26px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-h4--regular {
+	font-size: 15px;
+	line-height: 22px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-lead--regular {
+	font-size: 19px;
+	line-height: 30px;
+	font-family: Georgia, serif;
+	font-weight: 400;
+	font-style: italic;
+}
+%vkui--font-article-body--regular {
+	font-size: 18px;
+	line-height: 28px;
+	font-family: Georgia, serif;
+	font-weight: 400;
+}
+%vkui--font-specific-text--regular {
+	font-size: 18px;
+	line-height: 28px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-specific-footnote--regular {
+	font-size: 14px;
+	line-height: 22px;
+	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+%vkui--font-specific-button--regular {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-headline--regular {
+	font-size: 15px;
+	line-height: 20px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+%vkui--font-headline--compact {
+	font-size: 16px;
+	line-height: 20px;
+	font-family: MailSans, Inter, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+@custom-media --width-touch (max-width: 767px);
+@custom-media --width-to-touch (max-width: 767px);
+@custom-media --width-from-tablet (min-width: 768px);
+@custom-media --width-tablet (min-width: 768px) and (max-width: 1003px);
+@custom-media --width-to-tablet (max-width: 1003px);
+@custom-media --width-from-desktop-s (min-width: 1004px);
+@custom-media --width-desktop-s (min-width: 1004px) and (max-width: 1259px);
+@custom-media --width-to-desktop-s (max-width: 1259px);
+@custom-media --width-from-desktop-m (min-width: 1260px);
+@custom-media --width-desktop-m (min-width: 1260px);

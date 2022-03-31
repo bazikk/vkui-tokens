@@ -6,8 +6,12 @@ node_modules/
 !/src/
 !/demo
 !/assets
+!/build
+!/interfaces
+!/themeDescriptions
+!/themes
+!/utils
 !/.github
-!/dist/
 /**/*.d.ts
 /**/*.js
 !.eslintrc.js
@@ -15,4 +19,5 @@ node_modules/
 .yarnclean
 .DS_Store
 .idea
+!./dist/
 junit.xml
