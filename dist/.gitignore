@@ -1,5 +1,7 @@
 node_modules/
 /*/
+/**/*.d.ts
+/**/*.js
 !/src/generators/
 !/src/themeDescriptions/
 !/src/interfaces/
@@ -10,10 +12,10 @@ node_modules/
 !/interfaces
 !/themeDescriptions
 !/themes
+!/themes/**/*.js
+!/themes/**/*.d.ts
 !/utils
 !/.github
-/**/*.d.ts
-/**/*.js
 !.eslintrc.js
 !jest.config.js
 .yarnclean
